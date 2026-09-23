@@ -1,0 +1,91 @@
+header {
+    background-color: #008C8C;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+/*padding contenuto pagina sotto header*/
+
+main {
+    padding: 20px
+}
+
+/*Carattertistiche dei box*/
+.box {
+    background-color: #c0e3ea;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+/*Titolo e immagine dentro i box*/
+.titolo-immagine {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* aggiunta dei font nuovi*/
+
+h3 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1px;
+}
+
+/* Dimensioni e posizione delle immagini*/
+img {
+    width: 100px;
+    height: auto;
+    transform: translateY(-15px);
+}
+
+/*adattamento per dispositivi mobili*/
+
+@media (max-width: 600px) {
+
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .titolo-immagine {
+        gap: 8px;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+}
