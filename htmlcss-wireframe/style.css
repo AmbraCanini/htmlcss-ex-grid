@@ -5,10 +5,27 @@ header {
     padding: 50px;
 }
 
+/*titolo centrato e utilizzo di flex*/
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 /*padding contenuto pagina sotto header*/
 
 main {
-    padding: 20px
+    padding: 20px;
+    /*immagine centrata e massima larghezza raggiungibile per adattarla anche al mobile*/
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 /*Carattertistiche dei box*/
@@ -17,17 +34,16 @@ main {
     padding: 30px;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 30%;
-    margin: 20px auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
+    /*larghezza minima per restringere le box nel mobile*/
+    width: 300px%;
 }
 
 /*Titolo e immagine dentro i box*/
 .titolo-immagine {
     display: flex;
     align-items: center;
-    gap: 10px;
+    max-width: 400px;
 }
 
 /* aggiunta dei font nuovi*/
@@ -39,6 +55,12 @@ h3 {
 }
 
 h1 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -60,32 +82,4 @@ img {
     width: 100px;
     height: auto;
     transform: translateY(-15px);
-}
-
-/*adattamento per dispositivi mobili*/
-
-@media (max-width: 600px) {
-
-    .box {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .titolo-immagine {
-        gap: 8px;
-    }
-
-    img {
-        width: 70px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-
 }
