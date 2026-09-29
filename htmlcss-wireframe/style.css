@@ -21,6 +21,7 @@ main {
     padding: 20px;
     /*immagine centrata e massima larghezza raggiungibile per adattarla anche al mobile*/
     margin: 0 auto;
+    /*in contenitore non deve andare oltre di tot pixel*/
     max-width: 900px;
     display: flex;
     flex-wrap: wrap;
