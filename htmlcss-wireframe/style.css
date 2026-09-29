@@ -37,7 +37,9 @@ main {
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     /*larghezza minima per restringere le box nel mobile*/
-    width: 300px%;
+    min-width: 250px;
+    /*dimensione 1 terzo dello schermo, essenziale per andare a capo nel mobile*/
+    width: calc(100% / 3 - 64px / 3);
 }
 
 /*Titolo e immagine dentro i box*/
