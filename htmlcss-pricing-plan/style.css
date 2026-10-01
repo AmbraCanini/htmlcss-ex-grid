@@ -1,24 +1,54 @@
 header {
-    padding: 20px;
+    padding: 30px;
     background-color: rgb(1, 24, 12);
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.switch-button {
+    display: flex;
+    gap: 10px;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+
+
 }
 
 .card {
-    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-card {
     background-color: rgb(215, 255, 234);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
     max-width: 50%;
-    color: rgb(1, 24, 12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
 
+.pricing-card-center {
+    background-color: rgb(13, 74, 41);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    max-width: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    color: aliceblue;
 }
 
 p {
